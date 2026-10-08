@@ -32,7 +32,7 @@ int  main()
           }while(choice<MAX);
 }
 
-//    check for the overflow,read the element ,increament top,assign value to array.  
+//    check for the overflow,read the element , increament top,assign value to array.  
 
 
 
