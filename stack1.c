@@ -1,12 +1,12 @@
  #include<stdio.h>
  #define MAX 5
+int a[MAX],i,top=-1,choice,value;
  void push();
  void pop();
  void peek();
  void display();
 int  main()
 {
-    int a[10],i,top=-1,choice;
       do{
        
         printf("\n\n--- STACK OPERATIONS ---\n");
