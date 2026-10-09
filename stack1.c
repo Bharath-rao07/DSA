@@ -17,7 +17,7 @@ int  main()
         printf("5. Exit\n");
 
 
-        printf(" Enter the choice(1/2/3/4) : ");
+        printf(" Enter the choice(1/2/3/4/5) : ");
         scanf("%d",&choice);
         
         
@@ -39,6 +39,9 @@ int  main()
             printf("selected display operation ");
             display();
             break;
+    case 5:
+            printf("exiting the program...");
+            break;
    default: 
             printf("invalid choice");
             break;                                  
@@ -53,9 +56,10 @@ int  main()
 void push()
   {
     if(top==MAX-1)
+    {
      printf("stack is overflow ");
      return;
-   
+    }   
     printf("enter the values \n");
     scanf("%d",&value);
 
@@ -68,9 +72,10 @@ void push()
  void pop()
  {
     if(top==-1)
+    {
     printf("the stack is overflow ");
     return;
-
+    }
     printf("The element %d is deleted.",a[top]);
 
     top-=1;
@@ -106,9 +111,9 @@ void display()
     }
 
     printf("The elements of the stack are:\n");
-
-    for(i=top;i>=0;i--)
-    {
-        printf("%d\n",a[i]);
-    }
+ 
+      for(i=0;i<=top;i++)
+        {
+          printf("%d\n",a[i]);
+        }
 }
