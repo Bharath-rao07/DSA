@@ -73,7 +73,7 @@ void push()
  {
     if(top==-1)
     {
-    printf("the stack is overflow ");
+    printf("the stack is underflow ");
     return;
     }
     printf("The element %d is deleted.",a[top]);
