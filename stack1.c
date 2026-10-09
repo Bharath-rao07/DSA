@@ -78,3 +78,37 @@ void push()
     printf("The elements of the stack is deleted . ");
 
  }
+
+
+// checking whether the stack is empty or not.displaying the top element.
+
+void peek()
+{
+    if(top==-1)
+    {
+        printf("Stack is underflow  ");
+        return;
+    }
+
+    printf("The top element is %d",a[top]);
+}
+
+
+
+// checking whether the stack is empty or not then displaying the all the elements in thw stack.
+
+void display()
+{
+    if(top==-1)
+    {
+        printf("Stack is underflow ");
+        return;
+    }
+
+    printf("The elements of the stack are:\n");
+
+    for(i=top;i>=0;i--)
+    {
+        printf("%d\n",a[i]);
+    }
+}
