@@ -116,9 +116,10 @@ void display()
  {
     int i;
     if (front==-1)
+        
     {
         printf("The Queue is in underflow condition.\n");
-        return;
+         return;
     }
 
     for(i=front;i<=rear;i++)
