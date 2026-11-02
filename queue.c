@@ -11,7 +11,7 @@ int main()
 {
     int choice;
 
-    do
+    do   // do while for the  choice entry
     {
         printf("\n===QUEUE OPERATIONS===\n");
         printf("\n1.INSERT\n");
