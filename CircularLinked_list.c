@@ -23,7 +23,7 @@ struct Node* createNode(int value) {
     return newNode;
 }
 
-// Function to insert a node at the end of the circular linked list
+// Function to insert a node at the end of the circular linked list.
 void insertAtEnd(struct Node** head, int value) {
     struct Node* newNode = createNode(value);
 
@@ -38,7 +38,7 @@ void insertAtEnd(struct Node** head, int value) {
 
     struct Node* temp = *head;
 
-    // Traverse until the last node
+    // Traverse until the last node.
     while (temp->next != *head) {
         temp = temp->next;
     }
@@ -49,7 +49,7 @@ void insertAtEnd(struct Node** head, int value) {
     printf("Inserted %d at the end.\n", value);
 }
 
-// Function to display the circular linked list
+// Function to display the circular linked list.
 void displayList(struct Node* head) {
     if (head == NULL) {
         printf("The list is currently empty.\n");
@@ -97,7 +97,7 @@ void deleteNode(struct Node** head, int key) {
             last = last->next;
         }
 
-        // Update the last node's link
+        // Update the last node's link.
         *head = temp->next;
         last->next = *head;
 
